@@ -1,11 +1,13 @@
 <script>
-	const Addr = 'Install.png'
+	
 </script>
 
 <main>
-	<img src={Addr} alt="You Shoud Write Alt Attribute" />
+	<p>나를 빨간색으로 바꿔줘!</p>
 </main>
 
 <style>
-
+	p {
+		color:red;
+	}
 </style>

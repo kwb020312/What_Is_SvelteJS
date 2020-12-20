@@ -28,3 +28,9 @@ SvelteJS 는 크게 <main> , <script> , <style> 로 나뉘는데
 <img src="./gitImages/AttrVariable.png">
 
 src 에 들어갈 값은 public 폴더를 기준으로 상대경로를 적어주어야 한다.
+
+## 스타일링
+
+<img src="./gitImages/Style.png">
+
+스타일은 매우 간단하게 기존에 CSS 작업을 <style> 태그 안에서 해주면 정상 적용된다.
