@@ -173,3 +173,17 @@ $: FullName = FirstName + SecondName;
 결과는 다음과 같다.
 
 <h1>Hello There Your Age is 19</h1>
+
+만약 기본값을 주고 싶다면
+
+<img src="./gitImages/Props_Child.png">
+
+위 사진에서
+
+```javascript
+<script>export let age = (기본값)</script>
+```
+
+을 한다면 부모 컴포넌트에서 Props 를 주지않고
+
+<Other /> 로 호출하는경우 기본값으로 반영된다.
