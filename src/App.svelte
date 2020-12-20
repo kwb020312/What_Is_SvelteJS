@@ -1,15 +1,15 @@
 <script>
-	let count = 0;
-	$: double = count*2
-	const onClick = () => {
-		count++
+	let testObj = {
+		name:'woobin',
+		gender:'M'
 	}
-	$: if(count >= 10) {
-		alert(`Counting Number is ${count}`)
+	const onChange = () => {
+		testObj.gender = "W"
 	}
 </script>
 
 <main>
-	<input type="button" on:click={onClick} value="카운트 업!" />
-	<p>{double} 회 누르셨습니다.</p>
+	<p>Name : {testObj.name}</p>
+	<p>Gender : {testObj.gender}</p>
+	<button on:click={onChange}>Change Gender</button>
 </main>
