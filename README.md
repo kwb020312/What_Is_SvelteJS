@@ -207,3 +207,18 @@ $: FullName = FirstName + SecondName;
 결과화면은 아래와 같다.
 
 <h1>woobin,19,Programmer</h1>
+
+## 조건문
+
+<img src="./gitImages/Login.png">
+
+위 사진과 같이 HTML 을 제어할 수 있는 조건문을 작성할 수 있다
+
+```javascript
+{#if (조건식)}
+    <HTML>
+{/if}
+
+```
+
+조건식이 True 를 반환하면 HTML 태그가 보이며 False 를 반환하는 경우 보이지 않는다.
