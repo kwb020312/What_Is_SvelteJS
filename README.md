@@ -22,3 +22,9 @@ SvelteJS 는 크게 <main> , <script> , <style> 로 나뉘는데
 <img src="./gitImages/Variable.png">
 
 변수를 해당 부분처럼 사용할 수 있다.
+
+태그의 속상 값 으로도 변수를 사용할 수 있는데
+
+<img src="./gitImages/AttrVariable.png">
+
+src 에 들어갈 값은 public 폴더를 기준으로 상대경로를 적어주어야 한다.

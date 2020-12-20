@@ -1,9 +1,9 @@
 <script>
-	export let name='Chobby';
+	const Addr = 'Install.png'
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
+	<img src={Addr} alt="You Shoud Write Alt Attribute" />
 </main>
 
 <style>
