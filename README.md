@@ -187,3 +187,23 @@ $: FullName = FirstName + SecondName;
 을 한다면 부모 컴포넌트에서 Props 를 주지않고
 
 <Other /> 로 호출하는경우 기본값으로 반영된다.
+
+만약 Props 가 Object 인 경우
+
+<img src="./gitImages/Props_Object.png">
+
+위와 같이 상속해 줄 수 있다
+
+물론 각각의 값만 원하는경우
+
+<Child name={test.name} />
+
+위와같이 전달도 가능하다.
+
+<img src="./gitImages/Props_Object_Take.png">
+
+받아오는 경우엔 다른경우와 같이 받아 올 수 있다.
+
+결과화면은 아래와 같다.
+
+<h1>woobin,19,Programmer</h1>

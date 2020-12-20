@@ -1,7 +1,9 @@
 <script>
+    export let name
     export let age
+    export let job
 </script>
 
 <main>
-    <h1>Hello There Your Age is {age}</h1>
+    <h1>{name},{age},{job}</h1>
 </main>

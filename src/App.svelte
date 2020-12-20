@@ -1,7 +1,12 @@
 <script>
 	import Other from './Other.svelte'
+	const TestObj = {
+		name:'woobin',
+		age:19,
+		job:'Programmer'
+	}
 </script>
 
 <main>
-	<Other age={19} />
+	<Other {...TestObj} />
 </main>
