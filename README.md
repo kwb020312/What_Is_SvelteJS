@@ -222,3 +222,8 @@ $: FullName = FirstName + SecondName;
 ```
 
 조건식이 True 를 반환하면 HTML 태그가 보이며 False 를 반환하는 경우 보이지 않는다.
+
+<img src="./gitImages/ElseIf.png">
+
+위 사진과 같이 else if 또한 사용이 가능하며 끝에는 항상
+{/if} 를 해주어야 오류가 나지 않는다.
