@@ -87,3 +87,7 @@ src 에 들어갈 값은 public 폴더를 기준으로 상대경로를 적어주
 함수를 호출할 때 에는 on:click={함수명} 을 주어야 한다.
 
 함수선언은 <script> 태그 안에서 자유롭게 하면 된다.
+
+위와 같은 코드를 준다면 아래와 같이 출련된다.
+
+<img src="./gitImages/onClick_result.png">
