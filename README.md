@@ -279,5 +279,9 @@ $: FullName = FirstName + SecondName;
 모든 이벤트들은 on:(이벤트명) 으로 정의한다
 
 ```javascript
-<button on:click>Test</button>
+<button on:click={event}>Test</button>
+<div on:mousemove={event}>Test</div>
+<input on:keypress={event} type="text" value="Test" />
 ```
+
+on 과 event 명을 콜론(:) 으로 구분한다.
