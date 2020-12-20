@@ -46,3 +46,29 @@ src 에 들어갈 값은 public 폴더를 기준으로 상대경로를 적어주
 이렇게 Import 해와서 재사용이 가능하다.
 
 별도의 export 작업은 해주지않아도 된다.
+
+## HTML 변수
+
+<img src="./gitImages/JustStr.png">
+
+만약 HTML 태그를 변수에 넣고 삽입하고싶다면 어떻게 해야할까?
+
+위와같은 방법으로 하면 결과는
+
+<img src="./gitImages/JustStr_result.png">
+
+위와같이 된다 .그저 문자열로 인식하는 것 이다.
+
+하지만
+
+<img src="./gitImages/UsingHTML.png">
+
+위와 같이
+
+{@html (변수명)}
+
+으로 삽입한다면
+
+<img src="./gitImages/UsingHTML_result.png">
+
+위와 같은 결과가 출력되는 것을 알 수 있다.

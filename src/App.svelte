@@ -1,7 +1,7 @@
 <script>
-	import Other from './Other.svelte'
+	const str = '<b>글씨를 굵게 줄거야</b>'
 </script>
 
 <main>
-	<Other />
+	<span>{@html str}</span>
 </main>
