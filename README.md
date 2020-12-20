@@ -158,4 +158,18 @@ $: FullName = FirstName + SecondName;
 
 <img src="./gitImages/StateChange_result.png">
 
-위 이미지는 버튼을 두 번 누른경우이다.
+위 이미지는 버튼을 두 번 누른 경우이다.
+
+## Props
+
+<img src="./gitImages/Props.png">
+
+부모태그에서 import 한 컴포넌트에 위 사진처럼 프롭스를 주면
+
+<img src="./gitImages/Props_Child.png">
+
+자식 컴포넌트에서 export let (프롭스명) 으로 받아 사용이 가능하다.
+
+결과는 다음과 같다.
+
+<h1>Hello There Your Age is 19</h1>
