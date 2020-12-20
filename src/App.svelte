@@ -1,17 +1,20 @@
 <script>
-	const getData = async() => {
-		const jsonData = await fetch('https://jsonplaceholder.typicode.com/todos/3')
-		const data = await jsonData.json()
-		return data.title
+	let point = {x:0 , y:0}
+	function MouseMove(e) {
+		point.x = e.clientX;
+		point.y = e.clientY;
 	}
 </script>
 
 <main>
-	{#await getData()}
-		<p>데이터를 가져오는중..</p>
-	{:then data} 
-		<p>가져온 데이터는 {data}</p>
-	{:catch err}
-		<p>{err}</p>
-	{/await}
+	<div on:mousemove={MouseMove}>
+		Your x : {point.x} AND y : {point.y}
+	</div>
 </main>
+
+<style>
+	div {
+		width:100%;
+		height:100vh;
+	}
+</style>

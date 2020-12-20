@@ -273,3 +273,11 @@ $: FullName = FirstName + SecondName;
 <img src="./gitImages/Async.png">
 
 위 사진과 같이 비동기 작업을 할 함수를 SvelteJS 식으로 표현하면 된다.
+
+## 이벤트 처리
+
+모든 이벤트들은 on:(이벤트명) 으로 정의한다
+
+```javascript
+<button on:click>Test</button>
+```
