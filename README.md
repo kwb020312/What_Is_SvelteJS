@@ -114,3 +114,19 @@ $: FullName = FirstName + SecondName;
 ```
 
 위와같이 입력해주어야 한다.
+
+## $:
+
+과연 $: 는 어떨때 사용해야할까??
+
+```javascript
+<script>$: {alert('hello')}</script>
+```
+
+위와 같은경우 컴포넌트가 마운트 될 때 , 스테이트의 값이 어떠한 값이든 변경되는 경우 모두 alert('hello') 가 실행된다.
+
+만약 특정 상태가 변경되는 경우에만 실행하고 싶다면 조건식을 붙일 수 도있다.
+
+```javascript
+<script>$: if(value >= 10) {alert('Over 10')}</script>
+```

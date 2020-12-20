@@ -4,6 +4,9 @@
 	const onClick = () => {
 		count++
 	}
+	$: if(count >= 10) {
+		alert(`Counting Number is ${count}`)
+	}
 </script>
 
 <main>
