@@ -72,3 +72,10 @@ src 에 들어갈 값은 public 폴더를 기준으로 상대경로를 적어주
 <img src="./gitImages/UsingHTML_result.png">
 
 위와 같은 결과가 출력되는 것을 알 수 있다.
+
+## 작동원리
+
+<img src="./gitImages/WhiteBox.png">
+
+해당 사진처럼 main.js 안에 있는 내용이 Build 과정을 거치며
+우리가 사용할 수 있도록 컴파일 되는 것이다.
