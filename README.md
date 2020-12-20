@@ -34,3 +34,15 @@ src 에 들어갈 값은 public 폴더를 기준으로 상대경로를 적어주
 <img src="./gitImages/Style.png">
 
 스타일은 매우 간단하게 기존에 CSS 작업을 <style> 태그 안에서 해주면 정상 적용된다.
+
+## 컴포넌트 분리
+
+<img src="./gitImages/Other_Component.png">
+
+이렇게 다른 컴포넌트를 src 에 위치시켜주고
+
+<img src="./gitImages/Import.png"/>
+
+이렇게 Import 해와서 재사용이 가능하다.
+
+별도의 export 작업은 해주지않아도 된다.
