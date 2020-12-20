@@ -130,3 +130,5 @@ $: FullName = FirstName + SecondName;
 ```javascript
 <script>$: if(value >= 10) {alert('Over 10')}</script>
 ```
+
+즉 , $: 는 변경되는 상태에 따라 특정 행동을 취해야하는 경우에 사용된다고 볼 수 있다.
