@@ -91,3 +91,26 @@ src 에 들어갈 값은 public 폴더를 기준으로 상대경로를 적어주
 위와 같은 코드를 준다면 아래와 같이 출련된다.
 
 <img src="./gitImages/onClick_result.png">
+
+## 반응성 선언
+
+만약 FirstName 이라는 변수와 SecondName 이라는 변수를 조합하여
+FullName 을 갖는 변수는 어떻게 사용해야할까??
+
+```javascript
+const FirstName = 'Chobby';
+const SecondName = 'Kim';
+const FullName = FirstName + SecondName;
+```
+
+위와같이 입력될 것이지만 만약 이벤트로 FirstName 의 값이 변경된다면 FullName 의 값이 변경될까??
+
+변경되지 않는다. 변경되게 하기 위해서는 변수를 참조하는 변수의 앞에 $: 를 넣어
+
+```javascript
+const FirstName = 'Chobby';
+const SecondName = 'Kim';
+$: FullName = FirstName + SecondName;
+```
+
+위와같이 입력해주어야 한다.
