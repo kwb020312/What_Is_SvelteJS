@@ -227,3 +227,17 @@ $: FullName = FirstName + SecondName;
 
 위 사진과 같이 else if 또한 사용이 가능하며 끝에는 항상
 {/if} 를 해주어야 오류가 나지 않는다.
+
+## 반복문
+
+<img src="./gitImages/Repeat.png">
+
+```javascript
+{# each (배열) as (값 , 인덱스(생략가능) )}
+    <HTML>
+{/each}
+```
+
+의 형태이며 값 은 구조분해 할당이 가능하고 index 를 인자로 받을 수 있다.
+
+사용의 끝에는 항상 each 를 닫아주어야 한다.
