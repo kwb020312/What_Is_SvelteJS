@@ -253,3 +253,23 @@ $: FullName = FirstName + SecondName;
 ```
 
 위 구조처럼 값.id 가 아니더라도 식별을 위해 사용이 가능한 중복되지 않는 key 를 주어야 한다.
+
+## 비동기 작업
+
+비동기 작업을 위해서
+
+```javascript
+{#await (비동기 작업함수)()}
+    <p>기다리는 동안 표시할 HTML</p>
+{:then testVar}
+    <p>로딩이 끝나고 데이터를 표시할 HTML {testVar}</p>
+{:catch err}
+    <p>{err} 에러처리</p>
+{/await}
+```
+
+해당 구조를 사용해야한다 다음 사진을 보자
+
+<img src="./gitImages/Async.png">
+
+위 사진과 같이 비동기 작업을 할 함수를 SvelteJS 식으로 표현하면 된다.
