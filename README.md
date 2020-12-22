@@ -358,3 +358,13 @@ on:(디스패치 이벤트명) 을 사용하면 받아오기가 가능하며 해
 즉 우리가 원하는 데이터는 e.detail.(정의된 데이터 변수명)
 
 해당 예제에서는 e.detail.text 가 되겠다.
+
+디스패치 정보를 전달 전달하여 사용하는 경우가 있는데
+
+<img src="./gitImages/OuterComponent.png">
+
+위 사진과 같이 그냥 on:(디스패치 이벤트 명) 만 해놓는다면
+
+<img src="./gitImages/DispatchMain.png">
+
+메인 컴포넌트에서 사용했던 것과 같이 해당 컴포넌트를 불러와 데이터를 받을 수 있다.

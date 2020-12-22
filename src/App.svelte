@@ -1,9 +1,9 @@
 <script>
-	import Inner from './Inner.svelte'
+	import Outer from './Outer.svelte';
 </script>
 
 <main>
-	<Inner on:msg={e => console.log(e)} />
+	<Outer on:msg={e => console.log(e)} />
 </main>
 
 <style>
