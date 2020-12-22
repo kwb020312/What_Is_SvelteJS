@@ -1,10 +1,10 @@
 <script>
-	import Outer from './Outer.svelte';
+	import Button from "./Button.svelte";
+	function onClick () {
+		alert('클릭되었음!')
+	}
 </script>
 
 <main>
-	<Outer on:msg={e => console.log(e)} />
+	<Button on:click={onClick} />
 </main>
-
-<style>
-</style>
