@@ -1,21 +1,12 @@
 <script>
-	let point = {x:0 , y:0}
-	function MouseMove(e) {
-		point.x = e.clientX;
-		point.y = e.clientY;
+	function Say() {
+		alert('Hello!!')
 	}
 </script>
 
 <main>
-	<div on:mousemove={e => point: { point.x = e.clientX , y : clientY}}>
-		Your x : {point.x} AND y : {point.y}
-		Inline Function Apply
-	</div>
+	<button on:click|once|preventDefault={Say}>Say Hello</button>
 </main>
 
 <style>
-	div {
-		width:100%;
-		height:100vh;
-	}
 </style>
