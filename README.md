@@ -380,3 +380,13 @@ on:(디스패치 이벤트명) 을 사용하면 받아오기가 가능하며 해
 <img src="./gitImages/ParentClick.png">
 
 그렇다면 부모 컴포넌트에선 자식 이벤트와 같은 on:(이벤트명) 으로 해당 이벤트를 처리해줄 수 있는 것이다.
+
+## Input 으로 상태변경
+
+<img src="./gitImages/BindValue.png">
+
+```html
+<input type="text" bind:value="{변수명}" />
+```
+
+으로 정의해준다면 해당 변수명은 input 이 변경됨과 동시에 업데이트 된다.

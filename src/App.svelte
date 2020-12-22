@@ -1,10 +1,8 @@
 <script>
-	import Button from "./Button.svelte";
-	function onClick () {
-		alert('클릭되었음!')
-	}
+	let say = 'hello'
 </script>
 
 <main>
-	<Button on:click={onClick} />
+	<input type="text" bind:value={say} />
+	<h1>{say}</h1>
 </main>
