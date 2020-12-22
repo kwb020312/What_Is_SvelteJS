@@ -285,3 +285,11 @@ $: FullName = FirstName + SecondName;
 ```
 
 on 과 event 명을 콜론(:) 으로 구분한다.
+
+<img src="./gitImages/inlineFunction.png">
+
+함수를 on:click 안에서 적용하면 어떻게 될까??
+
+인라인 함수를 정의하면 컴파일 과정에서 문제가 된다고 말하지만 이는 SvelteJS 문법상으로는 문제가 없다
+
+개인적인 생각이지만 그래도 불편하니 그냥 함수를 정의하여 사용하는 것이 좋을 것 같다.

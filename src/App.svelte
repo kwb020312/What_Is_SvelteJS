@@ -7,8 +7,9 @@
 </script>
 
 <main>
-	<div on:mousemove={MouseMove}>
+	<div on:mousemove={e => point: { point.x = e.clientX , y : clientY}}>
 		Your x : {point.x} AND y : {point.y}
+		Inline Function Apply
 	</div>
 </main>
 
