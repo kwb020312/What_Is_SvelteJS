@@ -392,3 +392,11 @@ on:(디스패치 이벤트명) 을 사용하면 받아오기가 가능하며 해
 으로 정의해준다면 해당 변수명은 input 이 변경됨과 동시에 업데이트 된다.
 
 숫자형 변수도 bind:value 로 사용된다.
+
+모든 상황에 bind:value 가 사용되는 것은 아닌데,
+
+<img src="./gitImages/BindChecked.png">
+
+위 사진과 같이 체크박스의 경우 bind:value 를 사용하면 첫 클릭시에만 상태가 변경된다.
+
+체크박스의 경우 bind:checked 를 사용해주어야 한다.
