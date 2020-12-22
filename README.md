@@ -400,3 +400,12 @@ on:(디스패치 이벤트명) 을 사용하면 받아오기가 가능하며 해
 위 사진과 같이 체크박스의 경우 bind:value 를 사용하면 첫 클릭시에만 상태가 변경된다.
 
 체크박스의 경우 bind:checked 를 사용해주어야 한다.
+
+```javascript
+<input type="radio" bind:group={select} value=1 />
+<input type="radio" bind:group={select} value=2 />
+<input type="radio" bind:group={select} value=3 />
+```
+
+마찬가지의 예시로 radio 타입은 bind:group 을 사용하면 ,
+name 속성을 똑같이 설정한 것 과 같은 효과를 얻을 수 있다.

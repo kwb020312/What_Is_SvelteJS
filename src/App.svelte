@@ -1,12 +1,9 @@
 <script>
-	let checked = false
+	let select = 0
 </script>
 
 <main>
-	<input type="checkbox" bind:checked={checked} />
-	{#if checked}
-		<h1>체크 됨</h1>
-	{:else}
-		<h1>체크되지 않음</h1>
-	{/if}
+	<input type="radio" bind:group={select} value=1 />
+	<input type="radio" bind:group={select} value=2 />
+	<input type="radio" bind:group={select} value=3 />
 </main>
