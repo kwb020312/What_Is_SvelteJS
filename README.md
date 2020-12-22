@@ -354,3 +354,7 @@ on:(디스패치 이벤트명) 을 사용하면 받아오기가 가능하며 해
 다음과 같은 정보들이 들어있다.
 
 <img src="./gitImages/DispatchResult.png">
+
+즉 우리가 원하는 데이터는 e.detail.(정의된 데이터 변수명)
+
+해당 예제에서는 e.detail.text 가 되겠다.
