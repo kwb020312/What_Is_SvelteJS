@@ -385,8 +385,8 @@ on:(디스패치 이벤트명) 을 사용하면 받아오기가 가능하며 해
 
 <img src="./gitImages/BindValue.png">
 
-```html
-<input type="text" bind:value="{변수명}" />
+```javascript
+<input type="text" bind:value={변수명} />
 ```
 
 으로 정의해준다면 해당 변수명은 input 이 변경됨과 동시에 업데이트 된다.
