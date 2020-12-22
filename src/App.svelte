@@ -1,11 +1,9 @@
 <script>
-	function Say() {
-		alert('Hello!!')
-	}
+	import Inner from './Inner.svelte'
 </script>
 
 <main>
-	<button on:click|once|preventDefault={Say}>Say Hello</button>
+	<Inner on:msg={e => console.log(e)} />
 </main>
 
 <style>

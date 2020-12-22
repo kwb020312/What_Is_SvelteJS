@@ -313,3 +313,44 @@ on 과 event 명을 콜론(:) 으로 구분한다.
 <img src="./gitImages/Types.png">
 
 위 사진은 이벤트 수정자를 모아놓은 것이다.
+
+## 디스패치
+
+SvelteJS 의 디스패치는 React 와 비슷한 구조를 갖고있는데
+
+<img src="./gitImages/PushDispatch.png">
+
+위 사진을 보면
+
+```javascript
+import { createEventDispatcher } from 'svelte';
+
+const dispatch = createEventDispatcher();
+
+function Hello() {
+	dispatch('msg', {
+		text: 'Hello There!!!'
+	});
+}
+```
+
+디스패쳐를 가져와 변수에 할당하여 준 다음
+
+함수에서 디스패치 명 과 필요한 데이터를 담아 쏘아준다.
+
+그렇다면 해당 정보를 어떻게 가져올까??
+
+<img src="./gitImages/PullDispatch.png">
+
+```javascript
+import Inner from './Inner.svelte';
+<Inner on:msg={(e) => console.log(e)} />;
+```
+
+위와같이 해당 컴포넌트를 import 한 후 HTML 로 재사용 할 때
+
+on:(디스패치 이벤트명) 을 사용하면 받아오기가 가능하며 해당 e 에는
+
+다음과 같은 정보들이 들어있다.
+
+<img src="./gitImages/DispatchResult.png">
