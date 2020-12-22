@@ -1,8 +1,8 @@
 <script>
-	let say = 'hello'
+	let a = 0
 </script>
 
 <main>
-	<input type="text" bind:value={say} />
-	<h1>{say}</h1>
+	<input type="number" bind:value={a} />
+	<input type="range" bind:value={a} />
 </main>
