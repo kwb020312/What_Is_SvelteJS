@@ -409,3 +409,14 @@ on:(디스패치 이벤트명) 을 사용하면 받아오기가 가능하며 해
 
 마찬가지의 예시로 radio 타입은 bind:group 을 사용하면 ,
 name 속성을 똑같이 설정한 것 과 같은 효과를 얻을 수 있다.
+
+변수 이름이 value 인 경우 즉
+
+```javascript
+let value = 'test'
+<input type="text" bind:value={value} />
+// 위와 같이 동작한다
+<input type="text" bind:value />
+```
+
+위 코드박스 처럼 표현해도 같이 동작한다
